@@ -43,18 +43,18 @@
 
         <div>
           <strong class="text-lg">B.Sc. in Computer Science and Engineering</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>Ahsanullah University of Science and Engineering (2020)<br>
+          <span id="edu-1-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_1_action()">+</span><br>
+          <p id="edu-1" class="hide">Ahsanullah University of Science and Engineering (2020)<br>
           <em>CGPA: 3.383</em></p>
 
           <strong class="text-lg">Higher Secondary Certificate</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>Dhaka Residential Model College (2015)<br>
+          <span id="edu-2-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_2_action()">+</span><br>
+          <p id="edu-2" class="hide">Dhaka Residential Model College (2015)<br>
           <em>GPA: 4.92</em></p>
 
           <strong class="text-lg">Secondary School Certificate</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>Dhaka Residential Model College (2013)<br>
+          <span id="edu-3-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_3_action()">+</span><br>
+          <p id="edu-3" class="hide">Dhaka Residential Model College (2013)<br>
           <em>GPA: 5.00</em></p>
         </div>
 
@@ -66,23 +66,23 @@
         <ul class="list-disc ml-4">
           <li>
             <strong class="text-lg">Theoretical Concepts</strong>
-            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-            <p>Data Structures, Algorithms</p>
+            <span id="skill-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_1_action()">+</span><br>
+            <p id="skill-1" class="hide">Data Structures, Algorithms</p>
           </li>
           <li>
             <strong class="text-lg">Programming Languages</strong>
-            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-            <p>Python, C, C++, Java, Javascript</p>
+            <span id="skill-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_2_action()">+</span><br>
+            <p id="skill-2" class="hide">Python, C, C++, Java, Javascript</p>
           </li>
           <li>
             <strong class="text-lg">Database</strong>
-            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-            <p>MySQL</p>
+            <span id="skill-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_3_action()">+</span><br>
+            <p id="skill-3" class="hide">MySQL</p>
           </li>
           <li>
             <strong class="text-lg">Web Development Tools</strong>
-            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-            <p>HTML, CSS, PHP</p>
+            <span id="skill-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_4_action()">+</span><br>
+            <p id="skill-4" class="hide">HTML, CSS, PHP</p>
           </li>
         </ul>
 
@@ -93,28 +93,28 @@
 
         <div class="info-box">
           <strong class="text-lg">Bangladeshi Traffic Sign Detection and Recognition System</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>A system for identifying Bangladeshi traffic signs from input videos based on HOG property of traffic signs, using an SVM Model.<br>
+          <span id="proj-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_1_action()">+</span><br>
+          <p id="proj-1" class="hide">A system for identifying Bangladeshi traffic signs from input videos based on HOG property of traffic signs, using an SVM Model.<br>
           <em>Python</em></p>
 
           <strong class="text-lg">AUST Adventure: The Game</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>A 2D platform game developed using Java GUI.<br>
+          <span id="proj-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_2_action()">+</span><br>
+          <p id="proj-2" class="hide">A 2D platform game developed using Java GUI.<br>
           <em>Java</em></p>
 
           <strong class="text-lg">Movie and TV Series Viewer</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>A desktop application for viewing a database of Movies and TV shows.<br>
+          <span id="proj-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_3_action()">+</span><br>
+          <p id="proj-3" class="hide">A desktop application for viewing a database of Movies and TV shows.<br>
           <em>Java, MySQL</em></p>
 
           <strong class="text-lg">Online Game Store</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>A website for purchasing video games.<br>
+          <span id="proj-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_4_action()">+</span><br>
+          <p id="proj-4" class="hide">A website for purchasing video games.<br>
           <em>HTML, CSS, JavaScript, PHP</em></p>
 
           <strong class="text-lg">Online Retail Store for Computers</strong>
-          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
-          <p>A website for purchasing computers and computer related accessories.<br>
+          <span id="proj-5-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_5_action()">+</span><br>
+          <p id="proj-5" class="hide">A website for purchasing computers and computer related accessories.<br>
           <em>HTML, CSS, JavaScript, PHP</em></p>
         </div>
       </div>
