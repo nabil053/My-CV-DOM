@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript" src="functions.js"></script>
+    <title>CV - Nabil Ahmed</title>
+  </head>
+
+  <body>
+    <!--The main container body of the CV-->
+    <div class="container flex flex-col sm:flex-row mx-auto bg-red-100 w-full md:w-4/5 lg:w-3/5">
+      <!--Left section of the page-->
+      <div class="container flex-col bg-gray-600 text-red-100 w-full sm:w-1/3 p-4">
+        <!--Profile picture with name and designation below it-->
+        <img src="pictures/photo.jpg" class="mx-auto my-5" alt="profile picture">
+
+        <h1 class="text-center text-4xl">Nabil Ahmed</h1>
+        <h2 class="text-center text-2xl">Junior Software Engineer</h2>
+
+        <!--Contact information section-->
+        <div class="mx-auto my-5 bg-red-100 w-full">
+          <h2 class="text-left text-gray-600 text-2xl p-3">CONTACT</h2>
+        </div>
+
+        <div>
+          <p><strong class="text-lg">Address: </strong>House no. 36, Metropolitan Co-operative Housing Society, Block-F, Babar Road, Mohammadpur, Dhaka-1207</p>
+          <p><strong class="text-lg">Mobile: </strong>+8801534551539, +8801701627604</p>
+          <p><strong class="text-lg">Email: </strong>nabil.cse.53@gmail.com</p>
+          <p><strong class="text-lg">Github: </strong><a href="https://github.com/nabil053">https://github.com/nabil053</a></p>
+          <p><strong class="text-lg">LinkedIn: </strong><a href="https://linkedin.com/in/nabil-ahmed-900601195/">https://linkedin.com/in/nabil-ahmed-900601195/</a></p>
+        </div>
+      </div>
+
+      <!--Right section of the page-->
+      <div class="container flex-col w-full sm:w-2/3 p-4">
+        <!--Education information section-->
+        <div class="mx-auto my-5 bg-red-50 w-full">
+          <h2 class="text-left text-gray-600 text-2xl p-3">EDUCATION</h2>
+        </div>
+
+        <div>
+          <strong class="text-lg">B.Sc. in Computer Science and Engineering</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>Ahsanullah University of Science and Engineering (2020)<br>
+          <em>CGPA: 3.383</em></p>
+
+          <strong class="text-lg">Higher Secondary Certificate</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>Dhaka Residential Model College (2015)<br>
+          <em>GPA: 4.92</em></p>
+
+          <strong class="text-lg">Secondary School Certificate</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>Dhaka Residential Model College (2013)<br>
+          <em>GPA: 5.00</em></p>
+        </div>
+
+        <!--Technical skills information section-->
+        <div class="mx-auto my-5 bg-red-50 w-full">
+          <h2 class="text-left text-gray-600 text-2xl p-3">TECHNICAL SKILLS</h2>
+        </div>
+
+        <ul class="list-disc ml-4">
+          <li>
+            <strong class="text-lg">Theoretical Concepts</strong>
+            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+            <p>Data Structures, Algorithms</p>
+          </li>
+          <li>
+            <strong class="text-lg">Programming Languages</strong>
+            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+            <p>Python, C, C++, Java, Javascript</p>
+          </li>
+          <li>
+            <strong class="text-lg">Database</strong>
+            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+            <p>MySQL</p>
+          </li>
+          <li>
+            <strong class="text-lg">Web Development Tools</strong>
+            <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+            <p>HTML, CSS, PHP</p>
+          </li>
+        </ul>
+
+        <!--Projects information section-->
+        <div class="mx-auto my-5 bg-red-50 w-full">
+          <h2 class="text-left text-gray-600 text-2xl p-3">PROJECTS</h2>
+        </div>
+
+        <div class="info-box">
+          <strong class="text-lg">Bangladeshi Traffic Sign Detection and Recognition System</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>A system for identifying Bangladeshi traffic signs from input videos based on HOG property of traffic signs, using an SVM Model.<br>
+          <em>Python</em></p>
+
+          <strong class="text-lg">AUST Adventure: The Game</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>A 2D platform game developed using Java GUI.<br>
+          <em>Java</em></p>
+
+          <strong class="text-lg">Movie and TV Series Viewer</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>A desktop application for viewing a database of Movies and TV shows.<br>
+          <em>Java, MySQL</em></p>
+
+          <strong class="text-lg">Online Game Store</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>A website for purchasing video games.<br>
+          <em>HTML, CSS, JavaScript, PHP</em></p>
+
+          <strong class="text-lg">Online Retail Store for Computers</strong>
+          <button class="mx-1 px-1 pb-1 text-red-100 text-lg bg-gray-600">+</button><br>
+          <p>A website for purchasing computers and computer related accessories.<br>
+          <em>HTML, CSS, JavaScript, PHP</em></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
