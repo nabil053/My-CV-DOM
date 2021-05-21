@@ -154,3 +154,28 @@ function proj_5_action(){
     proj_5_btn.innerText = "-";
   }
 }
+
+function weatherDisplay(){
+  const API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=2be0f5da1ad4069a62950fce74581c5c&units=metric';
+
+  axios.get(API_URL).then(function(response){
+    temp = response.data.main.temp;
+    feels_like = response.data.main.feels_like;
+    humidity = response.data.main.humidity;
+    wind = response.data.wind.speed;
+
+    document.getElementById("temp").innerHTML = "<strong class=\"text-lg\">Temperature: </strong>" + temp + "°C";
+    document.getElementById("feels_like").innerHTML = "<strong class=\"text-lg\">Feels like: </strong>" + feels_like + "°C";
+    document.getElementById("humidity").innerHTML = "<strong class=\"text-lg\">Humidity: </strong>" + humidity + "%";
+    document.getElementById("wind").innerHTML = "<strong class=\"text-lg\">Wind: </strong>" + temp + "km/h";
+
+    document.getElementById("WeatherInfo").style.display = "block";
+
+    setTimeout(function(){
+      document.getElementById("WeatherInfo").style.display = "none";
+    }, 5000);
+    console.log(response.data);
+  }).catch(function(error){
+    console.log(error);
+  });
+}

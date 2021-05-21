@@ -9,3 +9,8 @@ a{
 .hide{
   display: none;
 }
+
+.overlay{
+  background-color: white;
+  position: absolute;
+}
