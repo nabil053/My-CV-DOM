@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="functions.js"></script>
     <title>CV - Nabil Ahmed</title>
   </head>
@@ -30,14 +29,14 @@
         <div>
           <!--Weather info displayed upon clicking on the address-->
           <div id="WeatherInfo" class="overlay hide text-gray-600 w-4/5 sm:w-1/5 p-2 border-solid border-2 border-black rounded-xl">
-            <strong>Weather Stats (Dhaka, Bangladesh)</strong><br>
-            <p id="temp"></p>
-            <p id="feels_like"></p>
-            <p id="wind"></p>
-            <p id="humidity"></p>
+            <strong class="text-xl">Weather Stats (Dhaka, Bangladesh)</strong><br>
+            <strong class="text-lg">Temperature: </strong><span id="temp"></span><br>
+            <strong class="text-lg">Feels like: </strong><span id="feels_like"></span><br>
+            <strong class="text-lg">Humidity: </strong><span id="wind"></span><br>
+            <strong class="text-lg">Wind: </strong><span id="humidity"></span><br>
           </div>
           <!--Contact details-->
-          <p id="Address" class="hover:bg-red-700" onclick="weatherDisplay()"><strong class="text-lg">Address: </strong>House no. 36, Metropolitan Co-operative Housing Society, Block-F, Babar Road, Mohammadpur, Dhaka-1207</p>
+          <p id="Address" class="hover:bg-red-700 cursor-pointer" onclick="weatherDisplay()"><strong class="text-lg">Address: </strong>House no. 36, Metropolitan Co-operative Housing Society, Block-F, Babar Road, Mohammadpur, Dhaka-1207</p>
           <p><strong class="text-lg">Mobile: </strong>+8801534551539, +8801701627604</p>
           <p><strong class="text-lg">Email: </strong>nabil.cse.53@gmail.com</p>
           <p><strong class="text-lg">Github: </strong><a href="https://github.com/nabil053">https://github.com/nabil053</a></p>
@@ -54,17 +53,17 @@
 
         <div>
           <strong class="text-lg">B.Sc. in Computer Science and Engineering</strong>
-          <span id="edu-1-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_1_action()">+</span><br>
+          <span id="edu-1-btn" class="px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="edu_1_action()">+</span><br>
           <p id="edu-1" class="hide">Ahsanullah University of Science and Engineering (2020)<br>
           <em>CGPA: 3.383</em></p>
 
           <strong class="text-lg">Higher Secondary Certificate</strong>
-          <span id="edu-2-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_2_action()">+</span><br>
+          <span id="edu-2-btn" class="px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="edu_2_action()">+</span><br>
           <p id="edu-2" class="hide">Dhaka Residential Model College (2015)<br>
           <em>GPA: 4.92</em></p>
 
           <strong class="text-lg">Secondary School Certificate</strong>
-          <span id="edu-3-btn" class="px-1 pb-1 text-gray-600 text-lg" onclick="edu_3_action()">+</span><br>
+          <span id="edu-3-btn" class="px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="edu_3_action()">+</span><br>
           <p id="edu-3" class="hide">Dhaka Residential Model College (2013)<br>
           <em>GPA: 5.00</em></p>
         </div>
@@ -77,22 +76,22 @@
         <ul class="list-disc ml-4">
           <li>
             <strong class="text-lg">Theoretical Concepts</strong>
-            <span id="skill-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_1_action()">+</span><br>
+            <span id="skill-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="skill_1_action()">+</span><br>
             <p id="skill-1" class="hide">Data Structures, Algorithms</p>
           </li>
           <li>
             <strong class="text-lg">Programming Languages</strong>
-            <span id="skill-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_2_action()">+</span><br>
+            <span id="skill-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="skill_2_action()">+</span><br>
             <p id="skill-2" class="hide">Python, C, C++, Java, Javascript</p>
           </li>
           <li>
             <strong class="text-lg">Database</strong>
-            <span id="skill-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_3_action()">+</span><br>
+            <span id="skill-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="skill_3_action()">+</span><br>
             <p id="skill-3" class="hide">MySQL</p>
           </li>
           <li>
             <strong class="text-lg">Web Development Tools</strong>
-            <span id="skill-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="skill_4_action()">+</span><br>
+            <span id="skill-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="skill_4_action()">+</span><br>
             <p id="skill-4" class="hide">HTML, CSS, PHP</p>
           </li>
         </ul>
@@ -104,27 +103,27 @@
 
         <div class="info-box">
           <strong class="text-lg">Bangladeshi Traffic Sign Detection and Recognition System</strong>
-          <span id="proj-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_1_action()">+</span><br>
+          <span id="proj-1-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="proj_1_action()">+</span><br>
           <p id="proj-1" class="hide">A system for identifying Bangladeshi traffic signs from input videos based on HOG property of traffic signs, using an SVM Model.<br>
           <em>Python</em></p>
 
           <strong class="text-lg">AUST Adventure: The Game</strong>
-          <span id="proj-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_2_action()">+</span><br>
+          <span id="proj-2-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="proj_2_action()">+</span><br>
           <p id="proj-2" class="hide">A 2D platform game developed using Java GUI.<br>
           <em>Java</em></p>
 
           <strong class="text-lg">Movie and TV Series Viewer</strong>
-          <span id="proj-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_3_action()">+</span><br>
+          <span id="proj-3-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="proj_3_action()">+</span><br>
           <p id="proj-3" class="hide">A desktop application for viewing a database of Movies and TV shows.<br>
           <em>Java, MySQL</em></p>
 
           <strong class="text-lg">Online Game Store</strong>
-          <span id="proj-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_4_action()">+</span><br>
+          <span id="proj-4-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="proj_4_action()">+</span><br>
           <p id="proj-4" class="hide">A website for purchasing video games.<br>
           <em>HTML, CSS, JavaScript, PHP</em></p>
 
           <strong class="text-lg">Online Retail Store for Computers</strong>
-          <span id="proj-5-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg" onclick="proj_5_action()">+</span><br>
+          <span id="proj-5-btn" class="mx-1 px-1 pb-1 text-gray-600 text-lg cursor-pointer select-none" onclick="proj_5_action()">+</span><br>
           <p id="proj-5" class="hide">A website for purchasing computers and computer related accessories.<br>
           <em>HTML, CSS, JavaScript, PHP</em></p>
         </div>

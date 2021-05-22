@@ -164,10 +164,10 @@ function weatherDisplay(){
     humidity = response.data.main.humidity;
     wind = response.data.wind.speed;
 
-    document.getElementById("temp").innerHTML = "<strong class=\"text-lg\">Temperature: </strong>" + temp + "°C";
-    document.getElementById("feels_like").innerHTML = "<strong class=\"text-lg\">Feels like: </strong>" + feels_like + "°C";
-    document.getElementById("humidity").innerHTML = "<strong class=\"text-lg\">Humidity: </strong>" + humidity + "%";
-    document.getElementById("wind").innerHTML = "<strong class=\"text-lg\">Wind: </strong>" + temp + "km/h";
+    document.getElementById("temp").innerHTML = temp + "°C";
+    document.getElementById("feels_like").innerHTML = feels_like + "°C";
+    document.getElementById("humidity").innerHTML = humidity + "%";
+    document.getElementById("wind").innerHTML = temp + "km/h";
 
     document.getElementById("WeatherInfo").style.display = "block";
 
